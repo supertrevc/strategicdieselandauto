@@ -32,6 +32,11 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+
+# project planning docs
+Complete_Guide_to_Building_an_Excellent_Website.docx.pdf
+Strategic_Diesel_Website_Build_Prompt.md
 
 # vercel
 .vercel
