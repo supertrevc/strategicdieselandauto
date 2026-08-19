@@ -40,6 +40,8 @@ const nextConfig: NextConfig = {
             value:
               "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://maps.googleapis.com https://maps.gstatic.com https://*.google.com https://*.ggpht.com; frame-src https://www.google.com https://maps.google.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://analytics.google.com;",
           },
+        ,
+          ...robotsHeaders,
         ],
       },
     ];
