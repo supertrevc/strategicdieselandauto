@@ -1,4 +1,17 @@
 import type { NextConfig } from "next";
+import { ROBOTS_TAG } from "./src/lib/search-visibility.mjs";
+
+
+/**
+ * Sent on every response while this is a private prospect demo — see
+ * src/lib/search-visibility.mjs. The <meta name="robots"> tag in the root
+ * layout only covers rendered HTML; this covers the rest of the origin (API
+ * routes, sitemap.xml, optimized images, anything in /public).
+ * Empty once SITE_SEARCH_VISIBILITY=public.
+ */
+const robotsHeaders = ROBOTS_TAG
+  ? [{ key: "X-Robots-Tag", value: ROBOTS_TAG }]
+  : [];
 
 const nextConfig: NextConfig = {
   async headers() {

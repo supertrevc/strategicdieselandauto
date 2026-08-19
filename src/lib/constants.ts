@@ -21,7 +21,11 @@ export const BUSINESS = {
     "https://www.google.com/maps/search/?api=1&query=Strategic+Diesel+and+Auto+Repair+644+S+1500+W+Vernal+UT",
   googleMapsEmbed:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.5!2d-109.55!3d40.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDI3JzAwLjAiTiAxMDnCsDMzJzAwLjAiVw!5e0!3m2!1sen!2sus!4v1",
-  url: "https://www.strategicdieselandauto.com",
+  // Prospect demo: the Vercel concept URL, NOT strategicdieselandauto.com. A demo must not
+  // advertise the client's own domain as canonical/sitemap host — that is a
+  // production signal the concept has not earned. Point it at the real domain
+  // at launch, alongside SITE_SEARCH_VISIBILITY=public.
+  url: "https://strategicdieselandauto.vercel.app",
   logo: "/images/logo.jpg",
   tagline: "Vernal's Trusted Diesel & Auto Repair",
   businessId: 55,
